@@ -8,6 +8,8 @@ Extencion: .py, .cpp, .rs, .go
 
 Why thoes languages: TODO, I didn't include C# because is very close in syntax, and I little fed up with talking do recruitment agency about C#. 
 
+Name patten: Longuages name number
+
 Note: Some of the verbal names are not conventional, or safe for work.
 
 How install: N/A
