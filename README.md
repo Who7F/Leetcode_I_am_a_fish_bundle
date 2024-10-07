@@ -16,9 +16,9 @@ The filename consists of the language name followed by a number that indicates t
 
 **Note:** Some solution names may be unconventional or not safe for work. 
 
-**Installation:**N/A 
+**Installation:** N/A 
 
-**Compilation:**N/A
+**Compilation:** N/A
 
 **How to run:** N/A
 
