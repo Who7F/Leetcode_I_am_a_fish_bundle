@@ -4,7 +4,6 @@
 
 class Solution:
     def findPermuta(self, nums, res, temp):
-        print(temp)
         if len(temp) == len(nums):
             # Adds base case (current subset to results)
             res.append(temp.copy())
