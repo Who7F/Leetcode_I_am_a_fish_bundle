@@ -17,8 +17,11 @@ func (s *Stack) Pop() (int, bool) {
         return 0, false
     }
 
+    // idx := len(s.arr)-1. But simple code so I am going to be laze
     val := s.arr[len(s.arr)-1]
+    s.arr[len(s.arr)-1] = 0 // clear element (important if slice stores pointers)
     s.arr = s.arr[:len(s.arr)-1]
+
     return val, true
 }
 
