@@ -3,26 +3,29 @@ class Solution:
         n = len(nums)
         res = [0] * n
 
-        dirtyTrick = defaultdict(list)
+        hashMap = defaultdict(list)
 
         for i, num in enumerate(nums):
-            dirtyTrick[num].append(i)
+            hashMap[num].append(i)
 
-        for dT in dirtyTrick.values():
-            if len(dT) == 1:
+        for h in hashMap.values():
+            if len(h) == 1:
                 continue
 
-            total = sum(dT)
-            tempL = 0
+            total = sum(h)
+            prf = 0
 
-            for i in range(len(dT)):
-                tempR = total - tempL - dT[i]
+            for i in range(len(h)):
+                sfx = total - prf - h[i]
 
-                left = dT[i] * i - tempL
-                right = tempR - dT[i] * (len(dT) - i - 1)
+                left = h[i] * i - prf
+                right = sfx - h[i] * (len(h) - i - 1)
 
-                res[dT[i]] = left + right
+                res[h[i]] = left + right
 
-                tempL += dT[i]
+                prf += h[i]
+
+            
+        return res
 
             
